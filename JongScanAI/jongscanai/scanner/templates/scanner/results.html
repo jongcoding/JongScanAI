@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Results</title>
+</head>
+<body>
+    <h1>Scan Results</h1>
+    <table>
+        <tr>
+            <th>URL</th>
+            <td>{{ result.url }}</td>
+        </tr>
+        <tr>
+            <th>Risk</th>
+            <td>{{ result.risk }}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>{{ result.description }}</td>
+        </tr>
+        <tr>
+            <th>Solution</th>
+            <td>{{ result.solution }}</td>
+        </tr>
+        <tr>
+            <th>Created At</th>
+            <td>{{ result.created_at }}</td>
+        </tr>
+    </table>
+</body>
+</html>
