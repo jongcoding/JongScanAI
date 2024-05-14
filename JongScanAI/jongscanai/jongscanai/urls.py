@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from scanner import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('scan_results/', views.scan_results, name='scan_results'),
+    path('results/<int:result_id>/', views.scan_results, name='scan_results'),
 ]
+
